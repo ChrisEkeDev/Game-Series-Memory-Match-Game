@@ -4,10 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e638e9503.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Game Series: Memory Match Game</title>
   </head>
   <body>
+    <main id="game_board">
+      <section>
+        <header>
+          <h1>Memory Match</h1>
+          <h2>
+            Time: <span class="minutes">00</span>:<span class="seconds"
+              >00</span
+            >
+          </h2>
+        </header>
+        <div id="grid"></div>
+      </section>
+      <section id="game_over">
+        <div>
+          <h2>Congratulations!</h2>
+          <h3>
+            Completion Time: <span class="final_minutes">00</span>:<span
+              class="final_seconds"
+              >00</span
+            >
+          </h3>
+          <button id="restart_btn">Restart</button>
+        </div>
+      </section>
+    </main>
     <script src="scripts.js"></script>
   </body>
 </html>
